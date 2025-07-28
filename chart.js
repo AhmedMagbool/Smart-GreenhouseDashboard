@@ -69,7 +69,7 @@ const chart = new Chart(ctx, {
   }
 });
 
-const url = "http://127.0.0.1:5000/api/sensors";
+const apiURL = "https://smart-greenhouse-2aaw.onrender.com";
 
 fetch(url)
   .then(res => res.json())
