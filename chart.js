@@ -1,5 +1,5 @@
 import { currentLang, toArabicNumber } from './ui.js';
-
+const url = "https://smart-greenhouse-2aaw.onrender.com/api/sensors/history"; // مثلاً للبيانات التاريخية
 const ctx = document.getElementById('chart').getContext('2d');
 const chart = new Chart(ctx, {
   type: 'line',
@@ -69,7 +69,6 @@ const chart = new Chart(ctx, {
   }
 });
 
-const apiURL = "https://smart-greenhouse-2asw.onrender.com/api/sensors/latest";
 
 fetch(url)
   .then(res => res.json())
